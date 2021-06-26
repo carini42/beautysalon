@@ -65,3 +65,5 @@ scrollReveal.reveal(
 `,
   { interval: 100 }
 )
+
+/*botão voltar para o topo*/
