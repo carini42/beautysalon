@@ -21,10 +21,10 @@ img {
 :root {
   --header-height: 4.5rem;
 
-  /* colors */
+  /* COLORS */
   --hue: 159;
 
-  /* HSL color mode */
+  /* HSL COLOR MODE */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -33,7 +33,7 @@ img {
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
 
-  /* fonts */
+  /* FONTS */
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
   --title-font: 'Poppins', sans-serif;
@@ -166,7 +166,8 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   color: var(--base-color);
 }
 
@@ -313,7 +314,6 @@ nav.show div.icon-close {
 
 #about .image img {
   position: relative;
-  /* right: 2.93rem; */
 }
 
 #about .image img,
@@ -500,7 +500,7 @@ footer .social a:hover {
 }
 
 /*------ MEDIA QUERIES ------*/
-/* extra large devices: 1200 > */
+/* EXTRA LARGE DEVICES: 1200 > */
 @media (min-width: 1200px) {
   .container {
     max-width: 1120px;
@@ -524,7 +524,7 @@ footer .social a:hover {
     height: 3.125rem;
   }
 
-  /* navigation */
+  /* NAVIGATION */
   nav .menu {
     opacity: 1;
     visibility: visible;
@@ -541,16 +541,21 @@ footer .social a:hover {
     -webkit-font-smoothing: antialiased;
   }
 
+  nav ul li a.tilte.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
   nav .icon-menu {
     display: none;
   }
 
-  /* layout */
+  /* LAYOUT */
   main {
     margin-top: calc var(--header-height);
   }
 }
-/* home */
+/* HOME */
 
 #home .container {
   grid-auto-flow: column;
@@ -567,13 +572,13 @@ footer .social a:hover {
   text-align: left;
 }
 
-/* about */
+/* ABOUT */
 #about .container {
   margin: 0 auto;
   grid-auto-flow: column;
 }
 
-/* services */
+/* SERVICES */
 .cards {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -583,13 +588,13 @@ footer .social a:hover {
   padding-right: 3rem;
 }
 
-/* testimonials */
+/* TESTIMONIALS */
 #testimonials .container {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* contact */
+/* CONTACT */
 #contact .container {
   grid-auto-flow: column;
   align-items: center;
@@ -599,7 +604,7 @@ footer .social a:hover {
   max-width: 25rem;
 }
 
-/* footer */
+/* FOOTER */
 footer.section {
   padding: 3.75rem 0;
 }
@@ -613,14 +618,14 @@ footer .logo {
   font-size: 2.25rem;
 }
 
-/* large devices: 1023 > */
+/* LARGE DEVICES: 1023 > */
 
-/* large devices: 992 > */
+/* LARGE DEVICES: 992 > */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
 }
-/* medium devices: 767 > */
-/* tudo o que já foi feito é para mobile */
+/* MEDIUM DEVICES: 767 > */
+/* TUDO QUE FOI FEITO É PARA MOBILE */
